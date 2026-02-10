@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Início{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+
+  <!-- Foto -->
+  <img 
+    src="{{ url_for('static', filename='img/luiza.jpg') }}" 
+    class="foto-perfil mb-3"
+    alt="Foto da Luiza"
+  >
+
+  <!-- Título -->
+  <h1 class="fw-bold">Oi, eu sou a Luiza </h1>
+
+  <!-- Descrição -->
+  <p class="text-muted">
+    Oi! Meu nome é Luiza, tenho 18 anos e sou apaixonada por desenvolvimento.
+    Gosto de criar projetos que unem simplicidade, estética e funcionalidade,
+    sempre buscando aprender algo novo a cada etapa do processo.
+    Estou em constante evolução, explorando tecnologias como HTML, CSS,
+    Bootstrap e Python, e transformando ideias em soluções práticas.
+    Sou curiosa, dedicada e acredito que o aprendizado contínuo é a chave
+    para crescer na área de tecnologia.
+  </p>
+
+  <!-- Projetos -->
+  <div class="container mt-4">
+    <div class="row justify-content-center gap-4">
+
+      <a href="/projetos#projeto1" class="balao">
+        <span>Projeto 1</span>
+      </a>
+
+      <a href="/projetos#projeto2" class="balao">
+        <span>Projeto 2</span>
+      </a>
+
+      <a href="/projetos#projeto3" class="balao">
+        <span>Projeto 3</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Redes sociais -->
+  <div class="social-icons mt-4">
+    <a href="https://www.linkedin.com/in/luiza-campos-silva-90b5573ab/" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://instagram.com/luhcsx" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="mailto:luizacampos2602@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <!-- Botão -->
+  <a href="/projetos" class="btn btn-outline-dark mt-4">
+    Ver meus projetos
+  </a>
+
+</div>
+{% endblock %}

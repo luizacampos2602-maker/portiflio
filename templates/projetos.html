@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Projetos{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Meus Projetos</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">O Labirinto</h5>
+          <p class="card-text text-muted">
+            o jogo de labirinto, feito com python no vscode.
+            <img 
+            src="{{ url_for('static', filename='img/labirinto.png') }}" 
+            class="foto-perfil mb-3"
+            alt="foto do labirinto" >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title"> Site melissa</h5>
+          <p class="card-text text-muted">
+           Site inspirado nos produtos da melissa, feito com código de programação em python usado no vscode
+           <img 
+            src="{{ url_for('static', filename='img/melissa.png') }}" 
+            class="foto-perfil mb-3"
+            alt="foto da melissa"
+          >
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+
+
